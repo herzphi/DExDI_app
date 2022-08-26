@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>DExDI</title>
+  </head>
+  <body>
+    <p>Column names are main_id, cc_id, dates, dra, dra_err, ddec, ddec_err</p>
+    <form action="/showname.html" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
