@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>DExDI</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'pm_graphs/style.css' %}">
   </head>
   <body>
     <h1>Detecting Exoplanets via Direct Imaging</h1>
     <p>Upload your observations via .csv or .json.</p>
     <p>Column names are main_id, cc_id, dates, dra, dra_err, ddec, ddec_err</p>
+    <li><a href="{% url 'dexdi:upload_file' %}">Wanna upload a file?</a></li>
   </body>
 </html>
